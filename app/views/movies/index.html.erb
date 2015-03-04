@@ -1,0 +1,14 @@
+<h1>Search for Movie!</h1>
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:movie, "Search for:") %>
+  <%= text_field_tag(:movie, nil, autofocus: true)%>
+  <%= submit_tag("Search") %>
+<% end %>
+
+<ul id="results">
+    </ul>
+<!-- <ul>
+< %  @movieresult.each do |movie| %>
+<li>< %= movie["Title"] %></li>
+< % end %>
+</ul> -->
